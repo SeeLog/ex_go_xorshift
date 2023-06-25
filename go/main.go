@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/rand"
 	"os"
 	"time"
@@ -72,6 +73,7 @@ func main() {
 	start := time.Now()
 	pi := calcPi(100000000)
 	end := time.Now()
-	fmt.Println(pi)
-	fmt.Println(end.Sub(start))
+	fmt.Println("Calculated pi:", pi)
+	fmt.Println("Diff:", math.Abs(pi-math.Pi))
+	fmt.Println("Elapsed:", end.Sub(start))
 }
