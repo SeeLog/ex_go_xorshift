@@ -41,8 +41,8 @@ func calcPiXorshift(n int) float64 {
 func calcPiMathRand(n int) float64 {
 	insideCount := 0
 	for i := 0; i < n; i++ {
-		x := float64(rand.Uint64()) / (1 << 31)
-		y := float64(rand.Uint64()) / (1 << 31)
+		x := float64(rand.Uint64()) / (1 << 64)
+		y := float64(rand.Uint64()) / (1 << 64)
 		if x*x+y*y <= 1 {
 			insideCount++
 		}
