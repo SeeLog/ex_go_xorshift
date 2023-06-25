@@ -10,7 +10,7 @@ $ go run main.go [math/rand | xorshift]
 
 例:
 ```sh
-$ go run go/main.go mathrand
+$ go run main.go mathrand
 use math/rand
 Calculated pi: 3.1413518
 Diff: 0.00024085358979331062
@@ -18,7 +18,7 @@ Elapsed: 3.098946161s
 ```
 
 ```sh
-$ go run go/main.go xorshift
+$ go run main.go xorshift
 use xorshift
 Calculated pi: 3.1414734
 Diff: 0.00011925358979292255
